@@ -10,7 +10,7 @@
     <ul>
         <li><a href="viewProducts.php">View Products</a><br></li>
         <li><a href="addProduct.php">Add Product</a><br></li>
-        <li><a href="updateProduct.php">Update Product</a></li>
+        <li><a href="updateproduct.php?id=<?php echo $record['id']; ?>">Update Product</a></li>
     </ul>
 </body>
 </html>
