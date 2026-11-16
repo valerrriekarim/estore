@@ -6,58 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-  <div class="form-container">
-    <h2>Add New Product</h2>
-
-    <!-- Form submits to addproduct.php -->
-    <form name="productForm" action="addproduct.php" method="POST" onsubmit="return validateForm()">
-      
-      <!-- 1. Product Name -->
-      <div class="form-group">
-        <label for="name">Product Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter product name">
-      </div>
-
-      <!-- 2. Price -->
-      <div class="form-group">
-        <label for="price">Price:</label>
-        <input type="number" id="price" name="price" step="0.01" placeholder="Enter price">
-      </div>
-
-      <!-- 3. Quantity -->
-      <div class="form-group">
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity">
-      </div>
-
-      <input type="submit" value="Add Product">
-    </form>
-
-    <br>
-    <a href="viewProducts.php">View All Products</a>
-  </div>
-
-  <!-- JavaScript Form Validation -->
-  <script>
-    function validateForm() {
-      var name = document.getElementById("name").value.trim();
-      var price = document.getElementById("price").value.trim();
-      var quantity = document.getElementById("quantity").value.trim();
-
-      // Check if any field is empty
-      if (name === "" || price === "" || quantity === "") {
-        alert("Please fill up all required fields (Name, Price, and Quantity)!");
-        return false; // Prevents the form from submitting
-      }
-
-      // Check if price and quantity are valid numbers greater than 0
-      if (parseFloat(price) <= 0 || parseInt(quantity) <= 0) {
-        alert("Price and Quantity must be greater than 0!");
-        return false;
-      }
-
-      return true; // Form is valid, proceed to addproduct.php
-    }
-  </script>
+    hello!! these are the links to the pages.<br>
+    <ul>
+        <a href="viewProducts.php">View Products</a><br>
+        <a href="addProduct.php">Add Product</a><br>
+        <a href="updateProduct.php">Update Product</a>
+    </ul>
 </body>
 </html>
