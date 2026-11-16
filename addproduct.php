@@ -57,7 +57,7 @@
           <input type="submit" value="Add Product">
         </form>
         <br>
-        <a href="viewProducts.php">View All Products</a>
+        <a href="index.html">Back to home</a>
     </div>
 
     <!-- JavaScript Validation: checks fields are filled before submitting -->
