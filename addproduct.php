@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+<?php
+
+    $sqlStatement = "INSERT into products …";
+    $mysqli->query($sqlStatement);
+
+?>
+ 
 </body>
 </html>
